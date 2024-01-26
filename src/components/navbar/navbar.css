@@ -1,0 +1,143 @@
+/* Styling for the navigation bar */
+nav {
+    width: 100vw;
+    height: 5rem;
+    place-items: center;
+    /* background-color: var(--color-primary); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
+    transition: var(--transition);
+    padding-left: 80px;
+    padding-right: 90px;
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 2px 0 rgba(136, 140, 181, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.active {
+    color: var(--color-primary);
+}
+
+/* Styling for the container within the navigation bar */
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_container a:hover {
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+/* Styling for the logo within the navigation bar */
+.nav_logo {
+    width: 10rem;
+    margin: 0;
+}
+
+/* Styling for the navigation menu within the navigation bar */
+.nav_menu {
+    display: flex;
+    gap: 3.5rem;
+    margin: 0;
+}
+
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger div {
+    width: 2rem;
+    height: 0.25rem;
+    background: var(--color-primary);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+/* Styling for the theme icon button within the navigation bar */
+#nav_btn {
+    position: relative; 
+    background: var(--color-primary);
+    /* color: white; */
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.313rem;
+}
+
+/* Show menu when hamburger is clicked */
+.nav_menu.show {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 2px 0 rgba(136, 140, 181, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/*HIDE NAV MENU ON TABLET AND PHONES*/
+
+@media screen and (max-width: 1024px) {
+    .nav_menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    #nav_btn {
+        display: none;
+        /* Add this to hide the button on smaller screens */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav_menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    #nav_btn {
+        display: none;
+        /* Add this to hide the button on smaller screens */
+    }
+}

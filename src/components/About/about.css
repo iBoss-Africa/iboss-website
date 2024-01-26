@@ -1,0 +1,76 @@
+/* Styling for the container within the about section */
+#about{
+    background: #F0F9FF;
+}
+
+.about_container{
+    grid-template-columns: 35% 53%;/* Setting up a grid with two columns */
+    gap: 12%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+/* Styling for the portrait image within the about section */
+.about_portrait{
+    height: fit-content;
+    max-height: 40rem;
+    transition: var(--transition);
+}
+
+
+/* Styling for the paragraphs within the right side of the about section */
+.about_right p{
+    margin-top: 0.8rem;
+}
+
+/* Styling for the buttons within the right side of the about section */
+.about_right .btn{
+    margin-top: 2.5rem;
+    
+}
+
+/* Media Queries Tablets */
+@media screen and (max-width: 1024px) {
+    .about_left{
+        display: none;
+    }
+
+    .about_container{
+        grid-template-columns: 1fr;
+    }
+
+    .about_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_right h2{
+        text-align: center;
+    }
+}
+
+/* Media Queries Phones */
+@media screen and (max-width: 600px) {
+    .about_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about_right .btn{
+        margin-top: 2rem;
+    }
+
+    .about_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
