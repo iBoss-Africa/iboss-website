@@ -20,8 +20,6 @@ const Navbar = () => {
     return hash === hashValue;
   };
 
-  
-
   const toggleMenu = () => {
     const nav = document.querySelector('.nav_menu');
     nav.classList.toggle('show');

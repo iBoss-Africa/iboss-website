@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Navbar from "./sections/Navbar/Navbar";
-import Footer from "./sections/Footer/Footer";
+import Navbar from "./sections/navbar/Navbar";
+import Footer from "./sections/footer/Footer";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
