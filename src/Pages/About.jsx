@@ -1,9 +1,9 @@
 import React from "react";
 import AboutHeader from "../sections/Aboutheader/AboutHeader";
-import Ourvision from "./../sections/ourvision/Ourvision";
-import Wework from './../sections/wework/Wework';
-import Contact from "../sections/contact/Contact";
-import Wedo from "../sections/wedo/Wedo";
+import Ourvision from "../sections/Ourvision/Ourvision";
+import Wework from '../sections/Wework/Wework';
+import Contact from "../sections/Contact/Contact";
+import Wedo from "../sections/Wedo/Wedo";
 
 const About = () => {
   return (

@@ -1,11 +1,11 @@
-import Header from './../sections/header/Header';
-import About from './../sections/about/About';
-import Services from './../sections/services/Services';
-import Paradise from './../sections/paradise/Paradise';
-import Ourworks from './../sections/ourworks/Ourworks';
+import Header from './../sections/Header/Header';
+import About from './../sections/About/About';
+import Services from './../sections/Services/Services';
+import Paradise from './../sections/Paradise/Paradise';
+import Ourworks from './../sections/Ourworks/Ourworks';
 import Partners from './../components/Partners/Partners';
-import Ourprocess from './../sections/ourprocess/Ourprocess';
-import Contact from './../sections/contact/Contact';
+import Ourprocess from './../sections/Ourprocess/Ourprocess';
+import Contact from './../sections/Contact/Contact';
 import React from "react";
 
 
