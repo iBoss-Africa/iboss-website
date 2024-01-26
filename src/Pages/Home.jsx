@@ -5,8 +5,8 @@ import Paradise from '../components/Paradise/Paradise';
 import Ourworks from '../components/Ourworks/Ourworks';
 import Partners from './../components/Partners/Partners';
 import Ourprocess from '../components/Ourprocess/Ourprocess';
-import Contact from './../sections/Contact/Contact';
 import React from "react";
+import ContactComponent from '../components/Contact/ContactComponent';
 
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
         <Ourworks />
         <Partners />
         <Ourprocess />
-        <Contact />
+        <ContactComponent />
     </main>
   );
 };
