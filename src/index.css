@@ -39,7 +39,7 @@
     font-family: 'Mona-Sans Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Mona-Sans Regular'), url('../../iboss-website/src/assets/font/Mona-Sans.woff') format('woff');
+    src: local('Mona-Sans Regular'), url('../src/assets/font/Mona-Sans.woff') format('woff');
     }
 
 html {
