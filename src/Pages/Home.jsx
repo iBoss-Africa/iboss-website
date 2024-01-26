@@ -1,4 +1,4 @@
-import Header from './../sections/Header/Header';
+// import Header from './../sections/Header/Header';
 import About from './../sections/About/About';
 import Services from './../sections/Services/Services';
 import Paradise from './../sections/Paradise/Paradise';
@@ -12,7 +12,7 @@ import React from "react";
 const Home = () => {
   return (
     <main>
-        <Header />
+        {/* <Header /> */}
         <About />
         <Services />
         <Paradise />
