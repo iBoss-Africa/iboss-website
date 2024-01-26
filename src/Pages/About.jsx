@@ -2,8 +2,8 @@ import React from "react";
 import AboutHeader from "../components/Aboutheader/Aboutheader";
 import Ourvision from "../components/Ourvision/Ourvision";
 import Wework from '../components/Wework/Wework';
-import Contact from "../sections/Contact/Contact";
 import Wedo from "../components/Wedo/Wedo";
+import ContactComponent from "../components/Contact/ContactComponent";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
       <Ourvision />
       <Wedo />
       <Wework />
-      <Contact />
+      <ContactComponent />
     </main>
   );
 };
