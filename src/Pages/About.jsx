@@ -1,5 +1,5 @@
 import React from "react";
-import AboutHeader from "../sections/Aboutheader/AboutHeader";
+import AboutHeader from "../sections/Aboutheader/Aboutheader";
 import Ourvision from "../sections/Ourvision/Ourvision";
 import Wework from '../sections/Wework/Wework';
 import Contact from "../sections/Contact/Contact";
