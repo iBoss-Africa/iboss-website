@@ -76,9 +76,9 @@ nav {
 
 /* Styling for the theme icon button within the navigation bar */
 #nav_btn {
-    position: relative; 
+    position: relative;
     background: var(--color-primary);
-    /* color: white; */
+    color: white;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
@@ -86,6 +86,11 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 0.313rem;
+}
+
+#nav_btn:hover {
+    background: rgb(255, 255, 255);
+    color: var(--color-primary);
 }
 
 /* Show menu when hamburger is clicked */
