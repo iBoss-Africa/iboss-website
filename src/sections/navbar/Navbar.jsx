@@ -22,10 +22,10 @@ const Navbar = () => {
 
   
 
-  const toggleMenu = () => {
-    const nav = document.querySelector('.nav_menu');
-    nav.classList.toggle('show');
-  };
+  // const toggleMenu = () => {
+  //   const nav = document.querySelector('.nav_menu');
+  //   nav.classList.toggle('show');
+  // };
   return (
     <nav>
       {/* Container for the navigation elements */}
@@ -53,7 +53,7 @@ const Navbar = () => {
             </HashLink>
           </li>
           <li>
-            <NavLink to="/about" activeClassName="active">
+            <NavLink to="/about" activeclassName="active">
               About
             </NavLink>
           </li>

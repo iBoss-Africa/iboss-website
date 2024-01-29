@@ -3,12 +3,10 @@ nav {
     width: 100vw;
     height: 5rem;
     place-items: center;
-    /* background-color: var(--color-primary); */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
-    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
     transition: var(--transition);
     padding-left: 80px;
     padding-right: 90px;
@@ -49,6 +47,39 @@ nav {
     margin: 0;
 }
 
+/* Styling for the theme icon button within the navigation bar */
+#nav_btn {
+    position: relative; 
+    background: var(--color-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.313rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Show menu when hamburger is clicked */
+.nav_menu.show {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 2px 0 rgba(136, 140, 181, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
 
 /* Hamburger menu */
 .hamburger {
@@ -72,40 +103,6 @@ nav {
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-}
-
-/* Styling for the theme icon button within the navigation bar */
-#nav_btn {
-    position: relative; 
-    background: var(--color-primary);
-    /* color: white; */
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    gap: 4px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.313rem;
-}
-
-/* Show menu when hamburger is clicked */
-.nav_menu.show {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
-
-    /* Glassmorphism */
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 2px 2px 0 rgba(136, 140, 181, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 /*HIDE NAV MENU ON TABLET AND PHONES*/
