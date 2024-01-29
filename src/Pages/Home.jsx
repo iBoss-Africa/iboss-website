@@ -1,12 +1,12 @@
-import Header from './../sections/header/Header';
-import About from './../sections/about/About';
-import Services from './../sections/services/Services';
-import Paradise from './../sections/paradise/Paradise';
-import Ourworks from './../sections/ourworks/Ourworks';
+import Header from '../components/Header/Header';
+import About from '../components/About/About';
+import Services from '../components/Services/Services';
+import Paradise from '../components/Paradise/Paradise';
+import Ourworks from '../components/Ourworks/Ourworks';
 import Partners from './../components/Partners/Partners';
-import Ourprocess from './../sections/ourprocess/Ourprocess';
-import Contact from './../sections/contact/Contact';
+import Ourprocess from '../components/Ourprocess/Ourprocess';
 import React from "react";
+import ContactComponent from '../components/Contact/ContactComponent';
 
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
         <Ourworks />
         <Partners />
         <Ourprocess />
-        <Contact />
+        <ContactComponent />
     </main>
   );
 };

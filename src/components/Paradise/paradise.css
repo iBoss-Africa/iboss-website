@@ -1,0 +1,54 @@
+#paradise {
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+#paradise h6 {
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+#paradise h4 {
+    font-weight: 400;
+}
+
+.paradise_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.buttons_container {
+    display: flex;
+    gap: 1rem;
+}
+
+.skill_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2.5rem;
+    color: rgb(161, 167, 173);
+    font-weight: 500;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    /* Define optional changes for tablets (optional) */
+}
+
+@media screen and (min-width: 1024px) {
+    /* Define optional changes for desktops (optional) */
+}

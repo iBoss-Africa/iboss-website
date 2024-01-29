@@ -1,9 +1,9 @@
 import React from "react";
-import AboutHeader from "./../sections/aboutheader/AboutHeader";
-import Ourvision from "./../sections/ourvision/Ourvision";
-import Wework from './../sections/wework/Wework';
-import Contact from "../sections/contact/Contact";
-import Wedo from "../sections/wedo/Wedo";
+import AboutHeader from "../components/Aboutheader/Aboutheader";
+import Ourvision from "../components/Ourvision/Ourvision";
+import Wework from '../components/Wework/Wework';
+import Wedo from "../components/Wedo/Wedo";
+import ContactComponent from "../components/Contact/ContactComponent";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
       <Ourvision />
       <Wedo />
       <Wework />
-      <Contact />
+      <ContactComponent />
     </main>
   );
 };

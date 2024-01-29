@@ -6,7 +6,13 @@
 
 .skills_list {
     display: flex;
-    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skillsList1,
+.skillsList2 {
+    margin-bottom: 15px; /* Adjust the margin as needed */
 }
 
 .skills_list li {
