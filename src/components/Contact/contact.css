@@ -48,8 +48,7 @@ button{
 }
 
 .contact_info_item {
-    display: flex;
-    flex-direction: column; /* Adjusted layout for better stacking on smaller screens */
+    display: flex; 
 }
 
 .contact_info_item h6 {
@@ -69,7 +68,7 @@ button{
 }
 
 .contact_info_item_img {
-    width: 30px;
+    width: 40px;
     margin-right: 10px;
 }
 
