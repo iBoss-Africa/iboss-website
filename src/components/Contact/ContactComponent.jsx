@@ -14,7 +14,7 @@ const ContactComponent = () => {
                         <div className="icon_container">
                             <img className="contact_info_item_img" src={Visit} alt="" />
                         </div>
-                        <div>
+                        <div className="contact_items">
                             <h6>Visit us</h6>
                             <p>
                                 173 Ogudu Road After Ogudu City Mall Opposite <br />
@@ -27,7 +27,7 @@ const ContactComponent = () => {
                         <div className="icon_container">
                             <img className="contact_info_item_img" src={Email} alt="" />
                         </div>
-                        <div>
+                        <div className="contact_items">
                             <h6>Email</h6>
                             <p>info@iboss.com</p>
                         </div>
@@ -37,14 +37,14 @@ const ContactComponent = () => {
                         <div className="icon_container">
                             <img className="contact_info_item_img" src={Phone} alt="" />
                         </div>
-                        <div>
+                        <div className="contact_items">
                             <h6>Call</h6>
                             <p>+234 916 155 4000, +234 916 166 4000</p>
                         </div>
                     </div>
 
                     <div className="contact_info_item">
-                        <div>
+                        <div className="contact_items">
                             <h6>Request A Quote</h6>
                             Want to do business with us? Send a request for
                             Proposal and we will respond within five

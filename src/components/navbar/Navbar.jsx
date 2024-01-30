@@ -5,8 +5,10 @@ import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+
   // Get the current pathname and hash from the location object
   const { pathname, hash } = useLocation();
 
@@ -30,8 +32,8 @@ const Navbar = () => {
         </HashLink>
 
         {/* Navigation menu section */}
-        <ul className="nav_menu">
-          <li>
+        <ul className="nav_menu" /*{`nav_menu ${isOpen ? "is-open" : ""}`}*/>
+          <li className="nav_menu_items">
             <HashLink
               smooth
               to="/#top"
@@ -40,12 +42,12 @@ const Navbar = () => {
               Home
             </HashLink>
           </li>
-          <li>
+          <li className="nav_menu_items">
             <NavLink to="/about" activeClassName="active">
               About
             </NavLink>
           </li>
-          <li>
+          <li className="nav_menu_items">
             <HashLink
               smooth
               to="/#our_works"
@@ -54,7 +56,7 @@ const Navbar = () => {
               Our Works
             </HashLink>
           </li>
-          <li>
+          <li className="nav_menu_items">
             <HashLink
               smooth
               to="/#services"
@@ -63,8 +65,6 @@ const Navbar = () => {
               Services
             </HashLink>
           </li>
-          {/* <a href="#our_works">Our Works</a>
-          <a href="#services">Services</a> */}
         </ul>
         {/* Nav icon button */}
         <a href="#our_contact" id="nav_btn" className="btn primary">
