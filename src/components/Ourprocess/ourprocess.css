@@ -46,6 +46,10 @@
     padding: 1rem;
 }
 
+.the_cards p{
+    font-size: smaller
+}
+
 .the_cards h6{
     color: #005B96;
 }
