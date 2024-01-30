@@ -48,8 +48,7 @@ button{
 }
 
 .contact_info_item {
-    display: flex;
-    flex-direction: column; /* Adjusted layout for better stacking on smaller screens */
+    display: flex; 
 }
 
 .contact_info_item h6 {
@@ -69,7 +68,7 @@ button{
 }
 
 .contact_info_item_img {
-    width: 30px;
+    width: 40px;
     margin-right: 10px;
 }
 
@@ -94,6 +93,11 @@ button{
     .contact_form {
         width: 40%; /* Adjusted width for better side-by-side layout on tablets */
     }
+
+    .contact_items{
+        gap: 1rem;
+        padding-bottom: 10px;
+    }
 }
 
 /* Media Queries for Phones */
@@ -105,5 +109,14 @@ button{
     .contact_information,
     .contact_form {
         width: 100%; /* Full width for better stacking on smaller screens */
+    }
+
+    .contact_items{
+        gap: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .contact_items h6{
+        padding-bottom: 4px;
     }
 }

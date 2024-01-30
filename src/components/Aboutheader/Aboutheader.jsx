@@ -12,7 +12,7 @@ const AboutHeader = () => {
 
           <p>
             Delivering wow is at the heart of iBOSS. It is the guiding force
-            that helps us unfold innovation <br /> and transformation and empowers our
+            that helps us <br /> unfold innovation and transformation and empowers our
             clients to create a saga of digital excellence
           </p>
         </div>
