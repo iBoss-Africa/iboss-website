@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+.footer_image_container img {
+  padding-bottom: 10px;
+}
+
 .footer_container p {
   font-size: smaller;
 }
