@@ -20,20 +20,10 @@ const Navbar = () => {
     return hash === hashValue;
   };
 
-  const toggleMenu = () => {
-    const nav = document.querySelector('.nav_menu');
-    nav.classList.toggle('show');
-  };
   return (
     <nav>
       {/* Container for the navigation elements */}
       <div className=" nav_container">
-        {/* Hamburger menu */}
-        {/* <button className="hamburger" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </button> */}
         {/* Logo section - navigates to top of home page */}
         <HashLink smooth to="/#top" className="nav_logo">
           <img src={Logo} alt="Logo" />

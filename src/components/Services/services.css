@@ -1,6 +1,12 @@
-/* #services{
-    background: #E5F5FF;
-} */
+#services{
+    background: #FFFFFF;
+}
+
+#services h2 {
+    margin-bottom: 0.8rem;
+    padding-bottom: 2rem;
+}
+
 
 /* Styling for the container within the services section */
 .services_container {
@@ -9,9 +15,10 @@
     gap: 2rem 4rem;
 }
 
-h2 {
-    margin-bottom: 0.8rem;
+.services_container p{
+    margin-top: 1rem;
 }
+
 
 .yellow-card {
     background-color: #FFF9E6;
