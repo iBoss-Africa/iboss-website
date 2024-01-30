@@ -57,7 +57,7 @@
     }
 
     .wework_image_container {
-        width: 100%;
+        width: 40%;
         order: 2;
     }
 
@@ -74,7 +74,10 @@
         gap: 1.2rem;
     }
 
-    .wework_image_container,
+    .wework_image_container{
+        width: 40%;
+    }
+
     .wework_details {
         width: 100%;
     }

@@ -61,7 +61,7 @@
 /* Media Queries for Smaller Screens (e.g., Phones) */
 @media screen and (max-width: 600px) {
     .ourprocess_card img {
-        width: 60%; /* Adjust the percentage as needed */
+        width: 30%; /* Adjust the percentage as needed */
     }
 
     .ourprocess_card h6 {
