@@ -9,8 +9,8 @@ nav {
     z-index: 9;
     box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
     transition: var(--transition);
-    padding-left: 80px;
-    padding-right: 90px;
+    padding-left: 5%;
+    padding-right: 5%;
 
     /* Glassmorphism */
     background: rgba(255, 255, 255, 0.6);
@@ -19,9 +19,9 @@ nav {
     -webkit-backdrop-filter: blur(10px);
 }
 
-HashLink {
+/* HashLink {
     margin-right: 30%;
-}
+} */
 
 .active {
     color: var(--color-primary);
@@ -76,6 +76,9 @@ HashLink {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 .hamburger_menu.open .bar {
