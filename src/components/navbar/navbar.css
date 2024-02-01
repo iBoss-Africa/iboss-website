@@ -53,7 +53,6 @@ nav {
 #nav_btn {
     position: relative;
     background: var(--color-primary);
-    color: white;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
@@ -61,6 +60,7 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 0.313rem;
+    padding: 0.5rem 1rem;
 }
 
 #nav_btn:hover {
@@ -68,35 +68,77 @@ nav {
     color: var(--color-primary);
 }
 
-.nav_btn{
-    /* display: none; */
-    visibility: hidden;
+/* Styling for the hamburger menu */
+.hamburger_menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger_menu.open .bar {
+    background-color: var(--color-primary);
+    /* Change color when menu is open */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #2b2b2b;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Styling for the responsive navigation menu */
+.nav_menu.open {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 2px 0 rgba(136, 140, 181, 0.37);
+    z-index: 10;
+}
+
+.nav_menu.open li {
+    margin: .2rem 0;
 }
 
 /*HIDE NAV MENU ON TABLET AND PHONES*/
 
 @media screen and (max-width: 1024px) {
-    nav.nav_menu_items {
-        display: none;
-    }
-
     nav a{
         font-size: 1.5rem;
     }
 
-    #nav_btn {
+    .hamburger_menu {
+        display: flex;
+    }
+
+    .nav_menu {
         display: none;
-        /* Add this to hide the button on smaller screens */
+    }
+
+    .nav_menu.open {
+        display: flex;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .nav_menu_items {
+    .hamburger_menu {
+        display: flex;
+    }
+
+    .nav_menu {
         display: none;
+    }
+
+    .nav_menu.open {
+        display: flex;
     }
 
     #nav_btn {
         display: none;
-        /* Add this to hide the button on smaller screens */
     }
 }

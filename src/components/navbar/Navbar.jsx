@@ -3,14 +3,18 @@ import Logo from "../../assets/navbar/logo.svg";
 import { CiMail } from "react-icons/ci";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 800);
 
   // Get the current pathname and hash from the location object
   const { pathname, hash } = useLocation();
+
+  // Reference for the dropdown menu
+  const dropdownRef = useRef();
 
   // Scroll to top whenever the pathname changes
   useEffect(() => {
@@ -22,6 +26,43 @@ const Navbar = () => {
     return hash === hashValue;
   };
 
+    // Toggle the mobile menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Close the menu when clicking outside
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Attach the event listener when the component mounts
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  // Check window size on resize and update isLargeScreen state
+  const handleResize = () => {
+    setIsLargeScreen(window.innerWidth > 800);
+  };
+
+  useEffect(() => {
+    // Attach the event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <nav>
       {/* Container for the navigation elements */}
@@ -31,8 +72,18 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" />
         </HashLink>
 
+         {/* Hamburger Menu Icon */}
+         <div
+          className={`hamburger_menu ${isMenuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
         {/* Navigation menu section */}
-        <ul className="nav_menu" /*{`nav_menu ${isOpen ? "is-open" : ""}`}*/>
+        <ul className={`nav_menu ${isMenuOpen ? "open" : ""}`} ref={dropdownRef}>
           <li className="nav_menu_items">
             <HashLink
               smooth
@@ -67,10 +118,13 @@ const Navbar = () => {
           </li>
         </ul>
         {/* Nav icon button */}
+        {/* Contact button visible on larger screens or when the menu is open */}
+        {(isLargeScreen || isMenuOpen) && (
         <a href="#our_contact" id="nav_btn" className="btn primary">
           Get in Touch
           <CiMail style={{ fontSize: "1.4em" }} />
         </a>
+        )}
       </div>
     </nav>
   );
