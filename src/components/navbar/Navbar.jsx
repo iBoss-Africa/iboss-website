@@ -26,7 +26,7 @@ const Navbar = () => {
     return hash === hashValue;
   };
 
-    // Toggle the mobile menu
+  // Toggle the mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -72,8 +72,8 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" />
         </HashLink>
 
-         {/* Hamburger Menu Icon */}
-         <div
+        {/* Hamburger Menu Icon */}
+        <div
           className={`hamburger_menu ${isMenuOpen ? "open" : ""}`}
           onClick={toggleMenu}
         >
@@ -83,7 +83,10 @@ const Navbar = () => {
         </div>
 
         {/* Navigation menu section */}
-        <ul className={`nav_menu ${isMenuOpen ? "open" : ""}`} ref={dropdownRef}>
+        <ul
+          className={`nav_menu ${isMenuOpen ? "open" : ""}`}
+          ref={dropdownRef}
+        >
           <li className="nav_menu_items">
             <HashLink
               smooth
@@ -120,10 +123,12 @@ const Navbar = () => {
         {/* Nav icon button */}
         {/* Contact button visible on larger screens or when the menu is open */}
         {(isLargeScreen || isMenuOpen) && (
-        <a href="#our_contact" id="nav_btn" className="btn primary">
-          Get in Touch
-          <CiMail style={{ fontSize: "1.4em" }} />
-        </a>
+          <li className="nav_menu_item">
+            <a href="#our_contact" id="nav_btn" className="btn primary">
+              Get in Touch
+              <CiMail style={{ fontSize: "1.4em" }} />
+            </a>
+          </li>
         )}
       </div>
     </nav>

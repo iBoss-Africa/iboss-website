@@ -3,7 +3,6 @@ nav {
     width: 100vw;
     height: 5rem;
     place-items: center;
-    /* background-color: var(--color-primary); */
     position: fixed;
     top: 0;
     left: 0;
@@ -18,6 +17,10 @@ nav {
     box-shadow: 0 2px 2px 0 rgba(136, 140, 181, 0.37);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+HashLink {
+    margin-right: 30%;
 }
 
 .active {
@@ -109,7 +112,7 @@ nav {
 
 @media screen and (max-width: 1024px) {
     nav a{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .hamburger_menu {
