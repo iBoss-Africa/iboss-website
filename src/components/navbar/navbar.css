@@ -3,15 +3,14 @@ nav {
     width: 100vw;
     height: 5rem;
     place-items: center;
-    /* background-color: var(--color-primary); */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
     box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
     transition: var(--transition);
-    padding-left: 80px;
-    padding-right: 90px;
+    padding-left: 5%;
+    padding-right: 5%;
 
     /* Glassmorphism */
     background: rgba(255, 255, 255, 0.6);
@@ -19,6 +18,10 @@ nav {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
+/* HashLink {
+    margin-right: 30%;
+} */
 
 .active {
     color: var(--color-primary);
@@ -73,6 +76,9 @@ nav {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 .hamburger_menu.open .bar {
@@ -109,7 +115,7 @@ nav {
 
 @media screen and (max-width: 1024px) {
     nav a{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .hamburger_menu {
