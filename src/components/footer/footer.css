@@ -42,23 +42,28 @@
   color: #005B96;
 }
 
-
-.footer_socials{
-  width: 20%;
-  display: flex;
+.company p,
+.our_services p,
+.get_in_touch p
+{
+  padding-bottom: 8px;
 }
 
 .socials {
   display: flex;
   align-self: self-start;
-  gap: 5px;
+  gap: 10px;
 }
 
-
-.footer_social {
-  width: 2rem;
+path:hover{
+  fill: black;
+  transition: fill 0.3s ease;
 }
 
+.icon :hover{
+  fill: black;
+  transition: fill 0.3s ease;
+}
 
 /* Media Queries Tablets */
 @media screen and (max-width: 768px) {

@@ -46,8 +46,14 @@
 }
 
 /* Styling for the heading within the service card */
-.service h4 {
+.service_details h4 {
     margin-bottom: 0.7rem;
+    font-size: 22;
+}
+
+.service_details p{
+    color: #4f4f4f;
+    font-size: 14;
 }
 
 

@@ -21,16 +21,20 @@ const About = () => {
 
         {/* Right side of the about section */}
         <div className="about_right">
-          <h2>We focus mainly on <br /> providing innovative softwares</h2>
+          <h2>
+            We are a visionary team driven <br />by the zeal to develop and deliver
+            <br /> game-changing solutions that <br />meet relevant and real needs.
+          </h2>
           {/* Introduction paragraphs */}
           <p>
-            Fuelled by a relentless pursuit of excellence, we embarked on a
-            mission to <br /> craft bespoke software solutions tailored to meet the
-            dynamic needs of <br /> businesses across industries.
+            As an innovative company, we constantly seek out new and relevant
+            ideas,<br /> systems, processes and products that respond to the common
+            challenges <br />of our environment as a means to promote quality living
+            through shared prosperity.
           </p>
           {/* Read More button */}
           <a href="/" className="btn primary">
-            Read More
+            Learn More
           </a>
         </div>
       </div>

@@ -31,7 +31,7 @@
 }
 
 .wework_details {
-    width: 80%;
+    width: 100%;
 }
 
 .wework_details h4{
@@ -40,8 +40,7 @@
 }
 
 .wework_container p {
-    font-size: 1rem;
-    
+    font-size: 1.1rem;
 }
 
 .wework_container h4 {

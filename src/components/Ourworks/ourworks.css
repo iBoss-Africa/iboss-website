@@ -15,12 +15,17 @@
 
 #our_works h2 {
   font-size: 2.7rem;
-  padding-bottom: 20px;
+  padding-bottom: 4px;
 }
 
 #our_works p {
   font-size: 1rem;
   padding-bottom: 2%;
+  color: #4f4f4f;
+}
+
+#our_works a{
+  margin-top: 18px;
 }
 
 .top,

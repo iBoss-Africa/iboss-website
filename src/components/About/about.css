@@ -24,6 +24,8 @@
 /* Styling for the paragraphs within the right side of the about section */
 .about_right p{
     margin-top: 0.8rem;
+    font-size: 16;
+    color: #4f4f4f;
 }
 
 /* Styling for the buttons within the right side of the about section */

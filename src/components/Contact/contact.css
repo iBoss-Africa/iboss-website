@@ -12,20 +12,19 @@
 }
 
 button{
-    font-family: 'Mona-Sans Regular';
+    font-family: "Manrope", sans-serif;
 }
-
-@font-face {
-    font-family: 'Mona-Sans Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Mona-Sans Regular'), url('../../assets/font/Mona-Sans.woff') format('woff');
-    }
 
 #our_contact h2 {
     color: white;
     padding-bottom: 40px;
     
+}
+
+.btn_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_info_container {
@@ -55,6 +54,7 @@ button{
     font-size: 1.2rem;
     margin: 0;
     color: var(--color-primary);
+    padding-bottom: 4px;
 }
 
 .contact_info_item p {
