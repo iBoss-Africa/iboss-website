@@ -34,20 +34,12 @@
     --transition: all 500ms ease;
 }
 
-
-@font-face {
-    font-family: 'Mona-Sans Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Mona-Sans Regular'), url('../src/assets/font/Mona-Sans.woff') format('woff');
-    }
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Mona-Sans Regular';
+    font-family: "Manrope", sans-serif;
     line-height: 1.6;
     font-size: 0.9rem;
 }
@@ -99,7 +91,8 @@ h6 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 14;
+    color: #4f4f4f;
 }
 
 h1 {

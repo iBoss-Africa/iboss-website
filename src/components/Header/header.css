@@ -29,7 +29,7 @@ header {
 
 .lightningBot {
     position: absolute;
-    bottom: -140px;
+    bottom: -80px;
     right: -10px;
 }
 
@@ -43,8 +43,12 @@ header {
 .header_container p {
     width: 100%;
     margin: 0.6rem 0 2rem;
+    color: #4f4f4f;
 }
 
+.header_content h1{
+    font-size: 65;
+}
 
 /* Styling for the call-to-action buttons within the header */
 .header_cta {

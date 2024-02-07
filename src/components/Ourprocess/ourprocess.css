@@ -14,6 +14,7 @@
 
 #ourprocess h4{
     font-weight: 400;
+    color: #4f4f4f;
 }
 
 .ourprocess_container {
@@ -43,15 +44,16 @@
 .the_cards {
     border: 1px solid #EFEFEF;
     border-radius: 6px;
-    padding: 1rem;
 }
 
 .the_cards p{
-    font-size: smaller
+    font-size: 14;
+    color: #4f4f4f;
 }
 
 .the_cards h6{
     color: #005B96;
+    font-size: 20;
 }
 
 .btn_process {
