@@ -102,7 +102,7 @@ const Navbar = () => {
           <li className="nav_menu_item">
             <HashLink
               smooth
-              to="/#ourSolutions"
+              to="/#our_works"
               className={isActive("#ourSolutions") ? "active" : ""}
             >
               Our works
