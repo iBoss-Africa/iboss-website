@@ -9,6 +9,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-image: url("../../assets/contact/contactusbg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 button{

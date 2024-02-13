@@ -1,6 +1,9 @@
 #our_vision{
     padding-top: 6.875rem;
     background: #FFFFFF;
+    background-image: url("../../assets/our_vision/our-vision-bg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .our_vision_content {
