@@ -105,7 +105,7 @@ const Navbar = () => {
               to="/#ourSolutions"
               className={isActive("#ourSolutions") ? "active" : ""}
             >
-              Our Solutions
+              Our works
             </HashLink>
           </li>
           <li className="nav_menu_item">
