@@ -102,10 +102,10 @@ const Navbar = () => {
           <li className="nav_menu_item">
             <HashLink
               smooth
-              to="/#ourSolutions"
+              to="/#our_works"
               className={isActive("#ourSolutions") ? "active" : ""}
             >
-              Our Solutions
+              Our works
             </HashLink>
           </li>
           <li className="nav_menu_item">
@@ -114,7 +114,7 @@ const Navbar = () => {
               to="/#services"
               className={isActive("#services") ? "active" : ""}
             >
-              Blog
+              Services
             </HashLink>
           </li>
           {/* "Send us a message" button visible only in the mobile dropdown menu */}
@@ -130,7 +130,7 @@ const Navbar = () => {
         {(isLargeScreen || isMenuOpen) && (
           <li className="nav_menu_item">
             <a href="#our_contact" id="nav_btn" className="btn primary">
-              Contact Us
+              Get in Touch
               <CiMail />
             </a>
           </li>
