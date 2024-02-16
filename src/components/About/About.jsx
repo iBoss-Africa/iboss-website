@@ -22,8 +22,8 @@ const About = () => {
         {/* Right side of the about section */}
         <div className="about_right">
           <h2>
-            We are a visionary team driven <br />by the zeal to develop and deliver
-            <br /> game-changing solutions that <br />meet relevant and real needs.
+            We are a visionary team driven by the zeal to develop and deliver
+           game-changing solutions that meet relevant and real needs.
           </h2>
           {/* Introduction paragraphs */}
           <p>

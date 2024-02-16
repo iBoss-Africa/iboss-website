@@ -1,12 +1,41 @@
 #our_vision{
-    padding-top: 6.875rem;
+    padding-top: 100px;
     background: #FFFFFF;
     background-image: url("../../assets/our_vision/our-vision-bg.png");
     background-size: cover;
     background-position: center;
+    padding-bottom: 40px;
 }
 
 .our_vision_content {
     text-align: center;
     padding-bottom: 1.25rem;
+}
+
+.vision_image{
+    background-image: url("../../assets/our_vision/visionbg.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+}
+
+.quote{
+    font-size: 8rem;
+    color: white;
+
+}
+
+.vision_image p{
+    color: white;
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 50px;
 }
