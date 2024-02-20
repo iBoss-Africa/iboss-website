@@ -1,9 +1,31 @@
 import "./ourworks.css";
 import TangoWorks from "../../assets/our_works/tango-works.svg";
 import QuikQikWorks from "../../assets/our_works/qikqik-works.svg";
-import React from "react";
+import React , { useEffect, useState } from "react";
 
 const Ourworks = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://iboss-webapi.onrender.com/v1/api/our-work?website=iboss"
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setProjects(data);
+        } else {
+          console.error("Failed to fetch projects:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Failed to fetch projects:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section id="our_works">
       <h2>Our Works</h2>
@@ -13,11 +35,9 @@ const Ourworks = () => {
             <img src={TangoWorks} alt="" />
           </div>
           <div className="top_right">
-            <h2>Tango</h2>
+            <h2>{projects[0]?.title}</h2>
             <p>
-              The Tango Project involves the configuration and adaption of different software
-              to seamlessly deliver end-to-end services to
-              users across the e-retail and <br /> logistics environment.
+              {projects[0]?.description}
             </p>
             <a href="/" className="btn primary">
               Learn More

@@ -1,19 +1,21 @@
 import "./ourvision.css";
-import ourVision from '../../assets/our_vision/ourvision.svg'
 
 const Ourvision = () => {
   return (
     <section id="our_vision">
       <div className="container our_vision_container">
         <div className="our_vision_content">
-          <h2>
-            Our Vision
-          </h2>
+          <h2>Our Vision</h2>
         </div>
 
         {/* Our Vision image section */}
         <div className="vision_image">
-          <img src={ourVision} alt="VisionImage" />
+          <div className="quote">“</div>
+          <p>
+            Create a visionary, passionate, tenacious, audacious, and
+            professional team driven by the zeal to develop and deliver
+            game-changing solutions that meet relevant and real needs.
+          </p>
         </div>
       </div>
     </section>
