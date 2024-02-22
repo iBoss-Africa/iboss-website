@@ -1,9 +1,31 @@
 import "./services.css";
 import data from "./data";
 import Card from "../../components/Card/Card";
-import React from "react";
+import React,{ useEffect, useState } from "react";
 
 const Services = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://iboss-webapi.onrender.com/v1/api/services?website=iboss"
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setProjects(data);
+        } else {
+          console.error("Failed to fetch projects:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Failed to fetch projects:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section id="services">
       {/* Section title */}
