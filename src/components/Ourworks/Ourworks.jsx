@@ -46,10 +46,9 @@ const Ourworks = () => {
         </div>
         <div className="bot">
           <div className="bot_left">
-            <h2>QikQik</h2>
+            <h2>{projects[1]?.title}</h2>
             <p>
-              This pioneer payment platform retains our services for providing
-              and maintaining integration with third-party applications.
+              {projects[1]?.description}
             </p>
             <a href="/" className="btn primary">
               Learn More
