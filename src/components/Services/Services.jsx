@@ -10,7 +10,7 @@ const Services = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://iboss-webapi.onrender.com/v1/api/services?website=iboss"
+          "https://api.ibossafrica.com/v1/api/services?website=iboss"
         );
         if (response.ok) {
           const data = await response.json();
