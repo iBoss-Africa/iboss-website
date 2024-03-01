@@ -23,17 +23,17 @@ const About = () => {
         <div className="about_right">
           <h2>
             We are a visionary team driven by the zeal to develop and deliver
-           game-changing solutions that meet relevant and real needs.
+            game-changing solutions that meet relevant and real needs.
           </h2>
           {/* Introduction paragraphs */}
           <p>
             As an innovative company, we constantly seek out new and relevant
-            ideas,<br /> systems, processes and products that respond to the common
+            ideas,systems, processes and products that respond to the common
             challenges <br />of our environment as a means to promote quality living
             through shared prosperity.
           </p>
           {/* Read More button */}
-          <a href="/" className="btn primary">
+          <a href="/about" className="btn primary">
             Learn More
           </a>
         </div>

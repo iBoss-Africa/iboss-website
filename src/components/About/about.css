@@ -1,6 +1,8 @@
 /* Styling for the container within the about section */
 #about{
     background: #F0F9FF;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .about_container{
@@ -16,7 +18,8 @@
 /* Styling for the portrait image within the about section */
 .about_portrait{
     height: fit-content;
-    max-height: 40rem;
+    max-height: 80rem;
+    width: max-content;
     transition: var(--transition);
 }
 
@@ -31,7 +34,6 @@
 /* Styling for the buttons within the right side of the about section */
 .about_right .btn{
     margin-top: 2.5rem;
-    
 }
 
 /* Media Queries Tablets */

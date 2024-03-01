@@ -22,7 +22,7 @@
     --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
 
     /* GENERAL CONTAINER VARIABLES */
-    --container-width-lg: 76%;
+    --container-width-lg: 92%;
     --container-width-md: 90%;
 
     /* BORDER RADIUS VARIABLES */
