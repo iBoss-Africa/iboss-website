@@ -118,6 +118,10 @@ nav {
         font-size: 1rem;
     }
 
+    #nav_btn{
+        display: none;
+    }
+
     .hamburger_menu {
         display: flex;
     }
