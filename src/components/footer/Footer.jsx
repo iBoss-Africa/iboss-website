@@ -12,7 +12,7 @@ const Footer = () => {
     <footer id="footer" className="container">
       <div className="footer_container">
         <div className="footer_image_container">
-          <img src={footerImage} alt="" />
+          <img src={footerImage} alt="" className="footer_image"/>
           <p>
             Consistent pursuit of innovation, excellence, and value through
             technology as levers of digital transformation, process automation,

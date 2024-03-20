@@ -23,7 +23,7 @@
     justify-self: center;
     align-items: center;
     justify-content: center;
-    padding: 120px;
+    padding: 60px;
 }
 
 .quote{
@@ -34,8 +34,43 @@
 
 .vision_image p{
     color: white;
-    font-size: 2.6rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: 500;
     line-height: 50px;
+}
+
+/* Media Queries (tablets) */
+@media screen and (max-width: 1024px) {
+
+    .vision_image{
+        height: 500px;
+    }
+
+    .vision_image p{
+        font-size: 30px;
+    }
+}
+
+/* Media Queries (phones) */
+@media screen and (max-width: 600px) {
+    .vision_image{
+        height: 400px;
+    }
+
+
+    .quote{
+        font-size: 30px;
+    }
+
+    .vision_image p{
+        font-weight: 200;
+        line-height: 30px;
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
 }

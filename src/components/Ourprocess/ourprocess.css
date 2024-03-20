@@ -60,6 +60,7 @@
 
 .btn_process {
     margin-top: 1.25rem;
+    display: none;
 }
 
 /* Media Queries for Smaller Screens (e.g., Phones) */

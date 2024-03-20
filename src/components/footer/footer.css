@@ -72,6 +72,10 @@ path:hover{
       margin: 10px 0; /* Adjusted margin for better spacing */
   }
 
+  .footer_image {
+    max-width: 100%; /* Make the image take full width on phones */
+}
+
 }
 
 /* Media Queries Phones */
